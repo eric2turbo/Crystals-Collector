@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crystals Collector</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <style type="text/css">
+
+    
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="panel panel-success">
+          <div class="panel-heading"><h1>Crystals Collector</h1></div>
+          <div class="panel-body">
+            <p>You will be given a random number at the start of the game.</p>
+            <p> There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+            <p>The value fo each crystal is hidden from you until you click on it.</p>
+            <p> Each time when the game starts, the game will change the values of each crystal.</p>
+          </div>
+    </div>
+    
+    
+    <div class="panel panel-default">
+      <div class="panel-heading"><p>The Target Number is:</p></div>
+      <div class="panel-body"><span id="targetScore"></span></div>
+    </div>
+  
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><p>Your total score is:</p></div>
+      <div class="panel-body" id="total-score"></div>
+    </div>
+ 
+
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div id="crystals">
+          <img class="gem" id="gem1" src="assets/images/crystal1.png">
+          <img class="gem" id="gem2" src="assets/images/crystal2.png">
+          <img class="gem" id="gem3" src="assets/images/crystal3.png">
+          <img class="gem" id="gem4" src="assets/images/crystal4.png">
+        </div>
+      </div>
+   </div>
+    
+   
+
+   <div class="panel panel-default">
+    <div class="panel-body" id="wins-losses"><p>Wins: 0</p><br><p>Losses: 0</p></div>
+   </div>
+
+  </div>
+  <!-- JAVASCRIPT  -->
+  <!-- ========================================= -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+  <script src="assets/javascript/game.js"> </script>
+
+</body>
+</html>
